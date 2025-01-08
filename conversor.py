@@ -16,12 +16,12 @@ def conversor():
         if conv == 1:
             cm =float(input('centimetro '))
             pulgadas = cm / 2.54
-            print(f'{cm} centimetros en igual a' , round(pulgadas,2))
+            print(f'{cm} centimetros en igual a' , round(pulgadas,4))
     
         elif conv == 2:
             pul = float(input('pulgadas : '))
             centimetro = pul * 2.54
-            print(f'{pul} centimetros en igual a' , round(centimetro,2))
+            print(f'{pul} centimetros en igual a' , round(centimetro,4))
         
         elif conv == 0:
             print('saliendo ')

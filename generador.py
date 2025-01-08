@@ -15,7 +15,7 @@ def imprimir(lista):
     moda = statistics.mode(lista)
     for numero in lista:
         if numero == moda:
-            print(Fore.GREEN + str(numero), end=" ")
+            print(Fore.RED + str(numero), end=" " + Fore.RESET)
         else:
             print(numero, end=" ")
     print(Style.RESET_ALL)

@@ -14,17 +14,17 @@ def conversor():
     while True:
         conv = float(input('opcion : '))
         if conv == 1:
-            cm =float(input('centimetro '))
+            cm = float(input('centimetro '))
             pulgadas = cm / 2.54
-            print(f'{cm} centimetros en igual a' , round(pulgadas,4))
+            print(f'{cm} centimetros en igual a', round(pulgadas, 4))
     
         elif conv == 2:
             pul = float(input('pulgadas : '))
             centimetro = pul * 2.54
-            print(f'{pul} centimetros en igual a' , round(centimetro,4))
+            print(f'{pul} centimetros en igual a', round(centimetro, 4))
         
         elif conv == 0:
-            print('saliendo ')
+            print('saliendo')
             break
         else:
             print('ingrese una opcion valida')

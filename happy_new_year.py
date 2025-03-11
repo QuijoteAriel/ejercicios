@@ -1,5 +1,5 @@
 from colorama import Fore
 import pyfiglet
 
-font=pyfiglet.figlet_format("Happy New Year ")
+font = pyfiglet.figlet_format("Happy New Year ")
 print(Fore.WHITE+font)

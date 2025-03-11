@@ -6,7 +6,7 @@ Conceptos a Practicar: Bucles (while), generación de números aleatorios, condi
 import random
 
 
-pc = random.randint(1,51)
+pc = random.randint(1, 51)
 while True:
     n = int(input('dime un numero '))
 #    pc = random.randint(1,51)

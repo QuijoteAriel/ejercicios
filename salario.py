@@ -12,7 +12,7 @@ data = [
          'age': 24}
         ]
 
-def salary_tall(person):
+def salary_tall(person: list) ->list:
     if person['salary'] > 11000:
         print(f" el salario de {person['name']} es mayor ")
     else:

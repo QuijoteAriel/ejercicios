@@ -72,3 +72,16 @@ for numero in generar_numeros_con_yield():
 # 2
 # 3
 # 4
+
+
+n = [2,3,4,5,6,7,8,9]
+scuare = [x**2 for x in n]
+print(scuare)
+
+
+#pares
+par=[x for x in range(1,21) if x%2 !=0]
+print(par)
+
+
+

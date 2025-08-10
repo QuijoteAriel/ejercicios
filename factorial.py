@@ -22,3 +22,12 @@ def fibo(n):
 
 number = 10
 print(fibo(number))
+
+def totalpaginas(libros):
+    if len(libros) == 1:
+        return libros[0]
+    return libros[0] + totalpaginas(libros[1:])
+
+totalpaginas([50, 100, 150])
+
+print(libros)

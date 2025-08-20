@@ -57,7 +57,6 @@ vocal = input("vocal ")
 
 print(frase.replace(vocal, vocal.upper())) # para usar replace se necesitan 2 argumentos , el que se quiere cambiar y el por el que se quiere cambiar 
 
-""" 
 
 
 # Ejercicio 7
@@ -67,7 +66,23 @@ email = input("dime tu email ")
 print(email[:email.find('@')] + "@ceu.es")
 
 
+# Ejercicio 8
+# Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.
 
+precio = str(input("dime el precio : "))
+print(precio[:precio.find('.')], 'euros y', precio[precio.find('.')+1:], 'céntimos.')
+
+""" 
+
+# Ejercicio 9
+# Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.
+
+
+fecha = input("dime una fecha ")
+
+print("dias ", fecha[:2:])
+print("mes ", fecha[3:5])
+print("año ", fecha[6::])
 
 
 

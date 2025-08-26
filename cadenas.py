@@ -1,5 +1,3 @@
-"""" 
-
 # Ejercicio 1
 # Escribir un programa que pregunte el nombre del usuario en la consola y un número entero e imprima por pantalla en líneas distintas el nombre del usuario tantas veces como el número introducido.
 
@@ -72,7 +70,6 @@ print(email[:email.find('@')] + "@ceu.es")
 precio = str(input("dime el precio : "))
 print(precio[:precio.find('.')], 'euros y', precio[precio.find('.')+1:], 'céntimos.')
 
-""" 
 
 # Ejercicio 9
 # Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.
@@ -84,9 +81,30 @@ print("dias ", fecha[:2:])
 print("mes ", fecha[3:5])
 print("año ", fecha[6::])
 
+dia = fecha[:fecha.find('/')]
+mesaño = fecha[fecha.find('/')+1:]
+mes = mesaño[:mesaño.find('/')]
+año = mesaño[mesaño.find('/')+1:]
+print('Día', dia)
+print('Mes', mes)
+print('Año', año)
 
 
 
+# Ejercicio 10
+# Escribir un programa que pregunte por consola por los productos de una cesta de la compra, separados por comas, y muestre por pantalla cada uno de los productos en una línea distinta.
 
+productos = input("lista de productos: ")
+print(productos.replace(',', '\n'))
+
+ 
+# Ejercico 11
+# Escribir un programa que pregunte el nombre el un producto, su precio y un número de unidades y muestre por pantalla una cadena con el nombre del producto seguido de su precio unitario con 6 dígitos enteros y 2 decimales, el número de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales.
+
+
+producto = input('Introduce el nombre del producto: ')
+precio = float(input('Introducde el precio unitario: '))
+unidades = int(input('Introduce el número de unidades: '))
+print('{producto}: {unidades:3d} unidades x {precio:09.2f}€ = {total:011.2f}€'.format(producto = producto, unidades = unidades, precio = precio, total = unidades * precio))
 
 

@@ -6,4 +6,4 @@ def es_primo(num):
     print("Es primo")
     return True
 
-es_primo(1000000009) #este numero es primo
+es_primo(77)  #este numero es primo

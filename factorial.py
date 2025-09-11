@@ -28,6 +28,6 @@ def totalpaginas(libros):
         return libros[0]
     return libros[0] + totalpaginas(libros[1:])
 
+    print(libros)
 totalpaginas([50, 100, 150])
 
-print(libros)

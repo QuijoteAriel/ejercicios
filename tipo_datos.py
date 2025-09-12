@@ -31,7 +31,7 @@ print(propi +1 )
 
 """
 def is_leap_year(year):
-    if <= 0:
+    if year <= 0:
         return False 
     
     elif year %4==0 and year %100!=0 or year % 100 ==0 and year %400 ==0:
@@ -40,7 +40,7 @@ def is_leap_year(year):
     else:
         return False
 
-resultad = is_leap_year(-2024)
+resultad = is_leap_year(1988)
 
 print(resultad)
 

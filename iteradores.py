@@ -1,3 +1,4 @@
+from collections.abc import Iterable 
 #crear un ierador
 
 my_list = [1, 2, 3, 4, 5, 6, 7]
@@ -84,4 +85,9 @@ par=[x for x in range(1,21) if x%2 !=0]
 print(par)
 
 
-
+lista = [1, 2, 3, 4]
+cadena = "Python"
+numero = 10
+print(isinstance(lista, Iterable))  #True
+print(isinstance(cadena, Iterable)) #True
+print(isinstance(numero, Iterable)) #False

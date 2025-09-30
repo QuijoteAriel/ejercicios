@@ -14,3 +14,35 @@ else:
 
 c = "papa"
 
+
+# Ejercicio 3
+
+#Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error.
+"""" 
+n1 = int(input('dime un numero entero: '))
+n2 = int(input('dime otro numero entero: '))
+
+
+try:
+    if n1 or n2 != 0 :
+        print(n1/n2)
+   
+else:
+except ValueError:
+    print("¡Error! Debes introducir un número entero válido.")
+except ZeroDivisionError:
+    print("¡Error! No puedes dividir entre cero.")
+
+"""
+########
+try:
+    n1 = int(input('dime un numero entero: '))
+    n2 = int(input('dime otro numero entero: '))
+    print(n1 / n2)
+except ValueError:
+    print("¡Error! Debes introducir un número entero válido.")
+except ZeroDivisionError:
+    print("¡Error! No puedes dividir entre cero.")
+
+
+

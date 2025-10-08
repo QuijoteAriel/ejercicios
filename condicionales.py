@@ -5,7 +5,7 @@
 
 edad = int(input("dime tu edad "))
 
-if edad >= 18:
+if edad >== 18:
     print("eres mayor de edad")
 else:
     print("No eres  mayor")
@@ -64,7 +64,7 @@ ingresos = int(input('cuanto es tu ingreso mensual :'))
 
 
 
-if edad > 16 and ingresos > 1000:
+if edad >= 16 and ingresos > 1000:
     print('debestributar')
 else:
     print('no deben tributar ')
@@ -81,19 +81,18 @@ nombre= input('cual es tu nombre ')
 
 
 if sexo == 'M':
-    if nombre.lower() < 'm':
+    if nombre.lower() <= 'm':
         print('Grupo A')
     else:
         print('Grupo B')
 
 if sexo == 'H':
-    if nombre.lower() > 'n':
+    if nombre.lower() >= 'n':
         print('Grupo A')
     else:
         print('Grupo B')
 
 
-""" 
 #los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
 
 # Renta	Tipo impositivo
@@ -111,16 +110,47 @@ renta = int(input('cual estu renta anual ? :'))
 
 if renta <= 10000:
     print('Tu renta de tipo Impositiva es de 5%')
-elif renta >= 10001 or renta <= 20000:
+elif renta >= 10001 and renta <= 20000:
     print('Tu renta de tipo Impositiva es de 15%')
-elif renta >= 20001 or renta <= 35000:
+elif renta >= 20001 and renta <= 35000:
     print('Tu renta de tipo Impositiva es de 20%')
-elif renta >= 35001 or renta <= 60000:
+elif renta >= 35001 and renta <= 60000:
     print('Tu renta de tipo Impositiva es de 30%')
 elif renta >= 60001:
     print('Tu renta de tipo Impositiva es de 45%')
 else:
     print('insete un numero valido ')
+
+
+""" 
+
+# La pizzería Bella Napoli ofrece pizzas vegetarianas y no vegetarianas a sus clientes. Los ingredientes para cada tipo de pizza aparecen a continuación.
+
+#   Ingredientes vegetarianos: Pimiento y tofu.
+#   Ingredientes no vegetarianos: Peperoni, Jamón y Salmón.
+
+# Escribir un programa que pregunte al usuario si quiere una pizza vegetariana o no, y en función de su respuesta le muestre un menú con los ingredientes disponibles para que elija. Solo se puede eligir un ingrediente además de la mozzarella y el tomate que están en todas la pizzas. Al final se debe mostrar por pantalla si la pizza elegida es vegetariana o no y todos los ingredientes que lleva.
+
+
+tipo_de_pizza = int(input('Pizza vegetariana o con carne ? (elije 1 para Vegeteriana o 2 para Carne)'))
+
+if tipo_de_pizza == 1:
+    tipo = input('con  1 para Pimiento o 2 para  Tofu ? ')
+    if tipo == 1:
+        print('Tu Pizza es Vegetariana  con Sala, Mozzarella y Pimiento')
+    else:
+        print('Tu Pizza es Vegetariana  con Sala, Mozzarella y Tofu ')
+elif tipo_de_pizza == 2:
+    tipo2 = input('con 1 para Peperoni, 2 para Jamon o 3 para  Salmon ?')
+    if tipo2 == 1:
+        print('tu pizza sale con Salsa, mozzarella y peperoni !')
+    elif tipo2 ==2:
+        print('tu pizza sale con Salsa, mozzarella y jamon !')
+    elif tipo2 == 3:
+        print('tu pizza sale con Salsa, mozzarella y salmon !')
+    
+else:
+    print('eligue una opcion valida ')
 
 
 

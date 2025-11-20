@@ -28,4 +28,9 @@ print(numeros)
 numeros.sort(reverse=True)
 print(numeros)
 
+pintas = ['♥️', '♦️', '♣️', '♠️']
 
+
+valor_decimal = 8.99
+valor = int(valor_decimal)
+print(valor)

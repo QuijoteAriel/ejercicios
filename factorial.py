@@ -8,7 +8,7 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-factorial_n = print(factorial(10))
+factorial_n = print(factorial(21))
 
 # fibonacci con recursibidad
 
